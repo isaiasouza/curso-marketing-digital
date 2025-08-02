@@ -1,0 +1,389 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red202\green202\blue203;}
+{\*\expandedcolortbl;;\cssrgb\c83137\c83137\c83529;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24\fsmilli12320 \cf2 \expnd0\expndtw0\kerning0
+<!DOCTYPE html>\
+<html lang="pt-BR">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Curso Completo de Marketing Digital 2025</title>\
+    \
+    <!-- Google Fonts -->\
+    <link rel="preconnect" href="https://fonts.googleapis.com">\
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">\
+    \
+    <!-- Tailwind CSS -->\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    \
+    <style>\
+        /* Custom Styles for a playful theme */\
+        body \{\
+            font-family: 'Poppins', sans-serif;\
+            background-color: #FEFBF6; /* Light cream background */\
+            color: #1E293B; /* Slate 800 */\
+        \}\
+\
+        /* Animation for elements fading in on scroll */\
+        .reveal \{\
+            opacity: 0;\
+            transform: translateY(40px);\
+            transition: opacity 0.8s ease-out, transform 0.6s ease-out;\
+        \}\
+\
+        .reveal.visible \{\
+            opacity: 1;\
+            transform: translateY(0);\
+        \}\
+\
+        /* FAQ Accordion Styles */\
+        .faq-answer \{\
+            max-height: 0;\
+            overflow: hidden;\
+            transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;\
+        \}\
+        .faq-item.active .faq-answer \{\
+            max-height: 200px; /* Adjust as needed */\
+            padding-top: 1rem;\
+            padding-bottom: 1rem;\
+        \}\
+        .faq-item.active .faq-arrow \{\
+            transform: rotate(180deg);\
+            color: #F59E0B; /* Amber 500 */\
+        \}\
+        .faq-arrow \{\
+            transition: transform 0.3s ease;\
+        \}\
+        \
+        /* Playful animated gradient */\
+        .animated-gradient \{\
+            background: linear-gradient(-45deg, #A78BFA, #F472B6, #FBBF24, #60A5FA);\
+            background-size: 400% 400%;\
+            animation: gradient 15s ease infinite;\
+        \}\
+\
+        @keyframes gradient \{\
+            0% \{ background-position: 0% 50%; \}\
+            50% \{ background-position: 100% 50%; \}\
+            100% \{ background-position: 0% 50%; \}\
+        \}\
+\
+        /* Custom button styles */\
+        .btn-primary \{\
+            @apply bg-slate-800 text-white font-bold py-3 px-8 rounded-full hover:bg-slate-700 transition-all duration-300 transform hover:scale-105 shadow-lg;\
+        \}\
+        .btn-secondary \{\
+            @apply bg-white text-slate-800 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg;\
+        \}\
+\
+    </style>\
+</head>\
+<body class="bg-cream-50">\
+\
+    <!-- 0. Navigation Bar (Fixed) -->\
+    <header class="bg-white/80 backdrop-blur-xl fixed top-0 left-0 right-0 z-50 border-b border-gray-200/80">\
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">\
+            <a href="#" class="text-xl font-extrabold text-slate-800">Marketing Digital 2025</a>\
+            <nav class="hidden md:flex items-center space-x-8">\
+                <a href="#features" class="font-semibold text-gray-600 hover:text-pink-500 transition">M\'f3dulos</a>\
+                <a href="#testimonials" class="font-semibold text-gray-600 hover:text-pink-500 transition">Depoimentos</a>\
+                <a href="#why-choose" class="font-semibold text-gray-600 hover:text-pink-500 transition">B\'f4nus</a>\
+                <a href="#why-choose" class="font-semibold text-gray-600 hover:text-pink-500 transition">Garantia</a>\
+                <a href="#faq" class="font-semibold text-gray-600 hover:text-pink-500 transition">FAQ</a>\
+            </nav>\
+            <a href="#cta" class="hidden md:inline-block btn-primary">\
+                Come\'e7ar Agora\
+            </a>\
+            <!-- Mobile Menu Button -->\
+            <button id="mobile-menu-button" class="md:hidden text-slate-800">\
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>\
+            </button>\
+        </div>\
+        <!-- Mobile Menu -->\
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4 space-y-2 border-t border-gray-200/80">\
+            <a href="#features" class="block font-semibold text-gray-600 hover:text-pink-500 transition pt-4">M\'f3dulos</a>\
+            <a href="#testimonials" class="block font-semibold text-gray-600 hover:text-pink-500 transition">Depoimentos</a>\
+            <a href="#why-choose" class="block font-semibold text-gray-600 hover:text-pink-500 transition">B\'f4nus</a>\
+            <a href="#why-choose" class="block font-semibold text-gray-600 hover:text-pink-500 transition">Garantia</a>\
+            <a href="#faq" class="block font-semibold text-gray-600 hover:text-pink-500 transition">FAQ</a>\
+            <a href="#cta" class="block btn-primary text-center mt-4">\
+                Come\'e7ar Agora\
+            </a>\
+        </div>\
+    </header>\
+\
+    <main>\
+        <!-- 1. Hero Section -->\
+        <section class="pt-32 pb-16 md:pt-48 md:pb-24 bg-cream-50 overflow-hidden">\
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">\
+                <div class="text-center md:text-left reveal">\
+                    <div class="inline-flex items-center bg-white border border-gray-200 rounded-full py-2 px-4 mb-6 shadow-md">\
+                        <img src="https://placehold.co/40x40/FBBF24/1E293B?text=\uc0\u9733 " alt="Badge" class="h-6 mr-2 rounded-full">\
+                        <span class="font-bold text-slate-700">Mais de 500 alunos aprovados</span>\
+                    </div>\
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-slate-800 leading-tight mb-4">\
+                        Transforme Sua Ideia em Neg\'f3cio Lucrativo em 30 Dias\
+                    </h1>\
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg mx-auto md:mx-0">\
+                        M\'e9todo comprovado usado por mais de 500 empreendedores para faturar 6 d\'edgitos.\
+                    </p>\
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">\
+                        <a href="#" class="btn-primary">Come\'e7ar Agora</a>\
+                        <a href="#features" class="btn-secondary">Ver Conte\'fado do Curso</a>\
+                    </div>\
+                    <p class="text-md text-gray-500 font-bold">"97% de satisfa\'e7\'e3o dos alunos"</p>\
+                </div>\
+                <div class="reveal">\
+                    <img src="https://placehold.co/600x500/A78BFA/FFFFFF?text=Mockup+do+Curso" alt="Marketing Digital Course Mockup" class="w-full max-w-md mx-auto md:max-w-none rounded-3xl shadow-2xl">\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- 2. Credibility Logos -->\
+        <section class="py-12 bg-white">\
+            <div class="container mx-auto px-6">\
+                <div class="flex justify-center items-center gap-8 md:gap-12 flex-wrap">\
+                    <div class="flex items-center gap-3 text-center">\
+                        <img src="https://placehold.co/50x50/F472B6/FFFFFF?text=C" alt="\'cdcone de um certificado" class="h-10 rounded-full">\
+                        <span class="font-bold text-gray-600">Certificado Reconhecido</span>\
+                    </div>\
+                    <div class="flex items-center gap-3 text-center">\
+                        <img src="https://placehold.co/50x50/60A5FA/FFFFFF?text=S" alt="\'cdcone de um cora\'e7\'e3o com o s\'edmbolo do infinito" class="h-10 rounded-full">\
+                        <span class="font-bold text-gray-600">Suporte Vital\'edcio</span>\
+                    </div>\
+                    <div class="flex items-center gap-3 text-center">\
+                        <img src="https://placehold.co/50x50/FBBF24/FFFFFF?text=A" alt="\'cdcone de um raio" class="h-10 rounded-full">\
+                        <span class="font-bold text-gray-600">Acesso Imediato</span>\
+                    </div>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- 3. Features Section -->\
+        <section id="features" class="py-16 md:py-24 bg-cream-50">\
+            <div class="container mx-auto px-6">\
+                <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16 reveal">\
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-4">O que voc\'ea vai dominar</h2>\
+                    <p class="text-lg text-gray-600">Um arsenal completo de estrat\'e9gias para voc\'ea construir um imp\'e9rio digital.</p>\
+                </div>\
+\
+                <div class="space-y-8">\
+                    <!-- Main Card -->\
+                    <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-lg reveal text-center">\
+                        <h3 class="text-2xl font-bold text-slate-800 mb-3">20+ M\'f3dulos Pr\'e1ticos</h3>\
+                        <p class="text-gray-600 max-w-2xl mx-auto">Aprenda as estrat\'e9gias exatas para sair do zero e faturar seu primeiro R$1M, com aulas passo a passo e materiais de apoio.</p>\
+                    </div>\
+                    <!-- Secondary Cards -->\
+                    <div class="grid md:grid-cols-3 gap-8">\
+                        <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-lg reveal text-center">\
+                            <img src="https://placehold.co/80x80/A78BFA/FFFFFF?text=VIP" alt="Grupo VIP" class="h-16 w-16 mx-auto mb-4 rounded-2xl">\
+                            <h4 class="text-xl font-bold text-slate-800 mb-2">Grupo VIP Exclusivo</h4>\
+                            <p class="text-gray-600">Networking e suporte direto com outros empreendedores de sucesso.</p>\
+                        </div>\
+                        <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-lg reveal text-center">\
+                            <img src="https://placehold.co/80x80/F472B6/FFFFFF?text=Certif." alt="Certificado" class="h-16 w-16 mx-auto mb-4 rounded-2xl">\
+                            <h4 class="text-xl font-bold text-slate-800 mb-2">Certificado Digital</h4>\
+                            <p class="text-gray-600">Reconhecido pelo mercado e v\'e1lido em todo o territ\'f3rio nacional.</p>\
+                        </div>\
+                        <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-lg reveal text-center">\
+                            <img src="https://placehold.co/80x80/FBBF24/FFFFFF?text=Live" alt="Aulas Ao Vivo" class="h-16 w-16 mx-auto mb-4 rounded-2xl">\
+                            <h4 class="text-xl font-bold text-slate-800 mb-2">Aulas Ao Vivo Mensais</h4>\
+                            <p class="text-gray-600">Tire d\'favidas e aprenda as \'faltimas novidades do mercado com o instrutor.</p>\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- 4. "Why Choose" Section / Guarantee -->\
+        <section id="why-choose" class="py-16 md:py-24 bg-white">\
+            <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12 text-center reveal">\
+                <div>\
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">15 Anos de Experi\'eancia</h3>\
+                    <p class="text-gray-600">Instrutor com hist\'f3rico comprovado e milh\'f5es faturados no mercado digital.</p>\
+                </div>\
+                <div>\
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Metodologia Testada</h3>\
+                    <p class="text-gray-600">Sistema passo a passo validado por centenas de alunos que hoje t\'eam sucesso.</p>\
+                </div>\
+                <div>\
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Resultados em 30 Dias</h3>\
+                    <p class="text-gray-600">Garantia de primeiros resultados ou seu dinheiro de volta. Risco zero.</p>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- 5. Testimonials Section -->\
+        <section id="testimonials" class="py-16 md:py-24 bg-cream-50">\
+            <div class="container mx-auto px-6">\
+                <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16 reveal">\
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-4">Quem fez, recomenda</h2>\
+                    <p class="text-lg text-gray-600">Hist\'f3rias reais de alunos que transformaram suas vidas com o nosso m\'e9todo.</p>\
+                </div>\
+                <div class="grid md:grid-cols-3 gap-8">\
+                    <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-lg flex flex-col reveal">\
+                        <div class="flex items-center mb-4 text-amber-400 text-2xl">\uc0\u9733 \u9733 \u9733 \u9733 \u9733 </div>\
+                        <p class="text-gray-700 mb-6 flex-grow font-medium">"Este curso mudou completamente minha vis\'e3o sobre marketing digital. Em 2 meses j\'e1 recuperei o investimento!"</p>\
+                        <div class="flex items-center">\
+                            <img src="https://placehold.co/60x60/1E293B/FFFFFF?text=JS" alt="Jo\'e3o Silva" class="h-14 w-14 rounded-full mr-4 border-2 border-white shadow-md">\
+                            <div>\
+                                <p class="font-bold text-slate-800">Jo\'e3o Silva</p>\
+                                <p class="text-sm text-gray-500 font-semibold">CEO da StartupX</p>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-lg flex flex-col reveal">\
+                        <div class="flex items-center mb-4 text-amber-400 text-2xl">\uc0\u9733 \u9733 \u9733 \u9733 \u9733 </div>\
+                        <p class="text-gray-700 mb-6 flex-grow font-medium">"Sa\'ed do zero e hoje faturo R$ 50 mil por m\'eas. O suporte da comunidade \'e9 incr\'edvel e faz toda a diferen\'e7a!"</p>\
+                        <div class="flex items-center">\
+                            <img src="https://placehold.co/60x60/1E293B/FFFFFF?text=MS" alt="Maria Santos" class="h-14 w-14 rounded-full mr-4 border-2 border-white shadow-md">\
+                            <div>\
+                                <p class="font-bold text-slate-800">Maria Santos</p>\
+                                <p class="text-sm text-gray-500 font-semibold">Empreendedora Digital</p>\
+                            </div>\
+                        </div>\
+                    </div>\
+                    <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-lg flex flex-col reveal">\
+                        <div class="flex items-center mb-4 text-amber-400 text-2xl">\uc0\u9733 \u9733 \u9733 \u9733 \u9733 </div>\
+                        <p class="text-gray-700 mb-6 flex-grow font-medium">"Vale cada centavo! As estrat\'e9gias s\'e3o pr\'e1ticas e funcionam de verdade. Sem enrola\'e7\'e3o, direto ao ponto."</p>\
+                        <div class="flex items-center">\
+                            <img src="https://placehold.co/60x60/1E293B/FFFFFF?text=CO" alt="Carlos Oliveira" class="h-14 w-14 rounded-full mr-4 border-2 border-white shadow-md">\
+                            <div>\
+                                <p class="font-bold text-slate-800">Carlos Oliveira</p>\
+                                <p class="text-sm text-gray-500 font-semibold">Dono de E-commerce</p>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- 6. FAQ Section -->\
+        <section id="faq" class="py-16 md:py-24 bg-white">\
+            <div class="container mx-auto px-6 max-w-3xl">\
+                <div class="text-center mb-12 md:mb-16 reveal">\
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-4">Sem mais d\'favidas</h2>\
+                    <p class="text-lg text-gray-600">Tudo o que voc\'ea precisa saber para come\'e7ar sua jornada agora mesmo.</p>\
+                </div>\
+                <div id="faq-accordion" class="space-y-4 reveal">\
+                    <!-- FAQ Item -->\
+                    <div class="faq-item bg-white border-2 border-gray-200 rounded-2xl p-6">\
+                        <button class="faq-question w-full flex justify-between items-center text-left font-bold text-lg text-slate-800">\
+                            <span>Preciso ter conhecimento pr\'e9vio?</span>\
+                            <svg class="faq-arrow w-6 h-6 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>\
+                        </button>\
+                        <div class="faq-answer text-gray-600 font-medium">N\'e3o! O curso foi desenhado para levar voc\'ea do zero absoluto ao n\'edvel avan\'e7ado, com um passo a passo claro e simples, ideal para iniciantes.</div>\
+                    </div>\
+                    <!-- FAQ Item -->\
+                    <div class="faq-item bg-white border-2 border-gray-200 rounded-2xl p-6">\
+                        <button class="faq-question w-full flex justify-between items-center text-left font-bold text-lg text-slate-800">\
+                            <span>Por quanto tempo tenho acesso?</span>\
+                            <svg class="faq-arrow w-6 h-6 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>\
+                        </button>\
+                        <div class="faq-answer text-gray-600 font-medium">Acesso vital\'edcio! Uma vez que voc\'ea se inscreve, o curso \'e9 seu para sempre, incluindo todas as futuras atualiza\'e7\'f5es e novas aulas.</div>\
+                    </div>\
+                    <!-- FAQ Item -->\
+                    <div class="faq-item bg-white border-2 border-gray-200 rounded-2xl p-6">\
+                        <button class="faq-question w-full flex justify-between items-center text-left font-bold text-lg text-slate-800">\
+                            <span>Tem garantia?</span>\
+                            <svg class="faq-arrow w-6 h-6 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>\
+                        </button>\
+                        <div class="faq-answer text-gray-600 font-medium">Sim! Oferecemos 30 dias de garantia incondicional. Se por qualquer motivo voc\'ea n\'e3o gostar do curso, devolvemos 100% do seu dinheiro.</div>\
+                    </div>\
+                    <!-- FAQ Item -->\
+                    <div class="faq-item bg-white border-2 border-gray-200 rounded-2xl p-6">\
+                        <button class="faq-question w-full flex justify-between items-center text-left font-bold text-lg text-slate-800">\
+                            <span>Como recebo o certificado?</span>\
+                            <svg class="faq-arrow w-6 h-6 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>\
+                        </button>\
+                        <div class="faq-answer text-gray-600 font-medium">Ap\'f3s completar 80% do curso, o certificado de conclus\'e3o \'e9 liberado automaticamente na plataforma para voc\'ea baixar e adicionar ao seu LinkedIn.</div>\
+                    </div>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- 7. Final CTA -->\
+        <section id="cta" class="py-16 md:py-24">\
+            <div class="container mx-auto px-6">\
+                <div class="animated-gradient rounded-3xl p-8 md:p-12 grid md:grid-cols-2 gap-8 items-center reveal shadow-2xl">\
+                    <div class="text-center md:text-left">\
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Garantir Minha Vaga com Desconto</h2>\
+                        <p class="text-lg text-white/80 mb-8">As vagas s\'e3o limitadas e o pre\'e7o promocional pode acabar a qualquer momento. N\'e3o perca essa chance!</p>\
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">\
+                            <a href="#" class="bg-white text-slate-800 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg w-full sm:w-auto">\
+                                Quero Minha Vaga Agora\
+                            </a>\
+                        </div>\
+                    </div>\
+                    <div class="hidden md:block">\
+                        <img src="https://placehold.co/400x300/A78BFA/FFFFFF?text=Curso+2025" alt="Course Mockup" class="w-full max-w-xs mx-auto rounded-2xl shadow-2xl">\
+                    </div>\
+                </div>\
+            </div>\
+        </section>\
+    </main>\
+\
+    <!-- 8. Footer -->\
+    <footer class="bg-slate-800 text-white">\
+        <div class="container mx-auto px-6 py-8 text-center">\
+            <p class="font-semibold mb-4">Curso Completo de Marketing Digital 2025 \'a9 2025</p>\
+            <div class="flex justify-center items-center space-x-6">\
+                <a href="#" class="text-gray-400 hover:text-white transition">Instagram</a>\
+                <a href="#" class="text-gray-400 hover:text-white transition">YouTube</a>\
+                <a href="#" class="text-gray-400 hover:text-white transition">LinkedIn</a>\
+            </div>\
+        </div>\
+    </footer>\
+\
+    <script>\
+        // Scroll Animation\
+        const observer = new IntersectionObserver((entries) => \{\
+            entries.forEach(entry => \{\
+                if (entry.isIntersecting) \{\
+                    entry.target.classList.add('visible');\
+                \}\
+            \});\
+        \}, \{\
+            threshold: 0.1\
+        \});\
+\
+        const elementsToReveal = document.querySelectorAll('.reveal');\
+        elementsToReveal.forEach(el => observer.observe(el));\
+\
+        // Mobile Menu\
+        const mobileMenuButton = document.getElementById('mobile-menu-button');\
+        const mobileMenu = document.getElementById('mobile-menu');\
+        mobileMenuButton.addEventListener('click', () => \{\
+            mobileMenu.classList.toggle('hidden');\
+        \});\
+\
+        // FAQ Accordion\
+        const faqAccordion = document.getElementById('faq-accordion');\
+        faqAccordion.addEventListener('click', (e) => \{\
+            const questionButton = e.target.closest('.faq-question');\
+            if (questionButton) \{\
+                const faqItem = questionButton.closest('.faq-item');\
+                \
+                // Close other items\
+                const allItems = faqAccordion.querySelectorAll('.faq-item');\
+                allItems.forEach(item => \{\
+                    if (item !== faqItem && item.classList.contains('active')) \{\
+                        item.classList.remove('active');\
+                    \}\
+                \});\
+\
+                // Toggle current item\
+                faqItem.classList.toggle('active');\
+            \}\
+        \});\
+    </script>\
+\
+</body>\
+</html>\
+}
